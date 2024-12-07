@@ -1,50 +1,34 @@
-# React + TypeScript + Vite
+# Личное портфолио / Personal Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Этот проект представляет собой персональное портфолио, созданное с использованием технологий React, TypeScript и других инструментов для создания современного и функционального сайта. В проекте использованы анимации, управление состоянием и красивый UI для отображения ваших работ и опыта.
 
-Currently, two official plugins are available:
+This project is a personal portfolio built with React, TypeScript, and other tools to create a modern and functional website. The project includes animations, state management, and beautiful UI components to showcase your work and experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Стек технологий / Tech Stack
 
-## Expanding the ESLint configuration
+- **React** — для создания динамического интерфейса / for building the dynamic interface.
+- **TypeScript** — для типизации кода / for code typing.
+- **TailwindCSS** — для стилизации / for styling.
+- **ShadCN UI** — для использования готовых UI-компонентов / for using ready-made UI components.
+- **Framer Motion** — для анимаций и переходов / for animations and transitions.
+- **Zustand** — для управления состоянием / for state management.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Установка / Installation
 
-- Configure the top-level `parserOptions` property like this:
+1. Клонируйте репозиторий / Clone the repository:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+   ```bash
+   git clone https://github.com/yourusername/portfolio.git
+   ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+2. Установите зависимости / Install dependencies:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+   ```bash
+   npm install
+   ```
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+3. Запустите приложение / Run the app:
+
+   ```bash
+   npm run dev
+   ```
